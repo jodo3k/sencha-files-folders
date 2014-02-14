@@ -15,7 +15,7 @@ Ext.define('sff.view.File', {
                 items: [
                     {
                         xtype: 'button',
-                        ui: 'normal',
+                        ui: 'plain',
                         iconCls: 'arrow_left',
                         iconMask: true,
                         action: 'goBack'
@@ -75,11 +75,11 @@ Ext.define('sff.view.File', {
 			{
 				xtype: 'container',
 				cls: 'file-contents',
-				id: 'file-contents',
 				items: [
 					{
 						xtype: 'label',
-						html: 'file contents'
+						id: 'file-contents',
+						html: ''
 					}
 				]
 			}

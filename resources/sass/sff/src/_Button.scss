@@ -133,12 +133,14 @@ $tip-width: $mask-width - $mask-offset + $shadow-width;
     .x-button-forward,
     .x-button-back {
         &:before, &:after {
+			/*
             @include insertion(15px, auto, -2px, auto);
             bottom: -2px;
             z-index: 2;
             -webkit-mask: 4px 0 theme_image('default', "tip2_left.png") no-repeat;
             -webkit-mask-size: 15px 100%;
             overflow: hidden;
+			*/
         }
     }
 }
@@ -146,6 +148,7 @@ $tip-width: $mask-width - $mask-offset + $shadow-width;
 .x-webkit {
     .x-button-back,
     .x-toolbar .x-button-back {
+		/*
         margin-left: $tip-width - $shadow-width + $toolbar-spacing  - 0.01;
         padding-left: .4em;
 
@@ -156,10 +159,12 @@ $tip-width: $mask-width - $mask-offset + $shadow-width;
         &:after {
             left: -14px;
         }
+		*/
     }
 
     .x-button-forward,
     .x-toolbar .x-button-forward {
+		/*
         margin-right: $tip-width - $shadow-width + $toolbar-spacing;
         padding-right: .4em;
 
@@ -176,6 +181,7 @@ $tip-width: $mask-width - $mask-offset + $shadow-width;
         &:after {
             right: -14px;
         }
+		*/
     }
 }
 

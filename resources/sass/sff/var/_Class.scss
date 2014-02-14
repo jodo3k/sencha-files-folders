@@ -36,13 +36,14 @@ $include-default-uis: true !default;
  * Optionally disable all gradients, text-shadows, and box-shadows. Useful for CSS debugging,
  * non-performant browsers, or minimalist designs.
  */
-$include-highlights: true !default; // Can disable all theme-generated gradients, text-shadows, and box-shadows.
+//$include-highlights: true !default; // Can disable all theme-generated gradients, text-shadows, and box-shadows.
+$include-highlights: false !default;
 
 /**
  * @var {boolean} $include-border-radius
  * Optionally disable all border-radius. Useful for CSS debugging, non-performant browsers, or minimalist designs.
  */
-$include-border-radius: true !default; // Can disable all rounded corners
+$include-border-radius: false !default; // Can disable all rounded corners
 
 /**
  * @var {boolean} $basic-slider
@@ -54,7 +55,8 @@ $basic-slider: false !default;
  * @var {color} $base-color
  * The primary color variable from which most elements derive their color scheme.
  */
-$base-color: #1985D0 !default; // Triton Blue
+//$base-color: #1985D0 !default; // Triton Blue
+$base-color: #d1d2d3 !default; // Triton Blue
 
 /**
  * @var {string} $base-gradient
